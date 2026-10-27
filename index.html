@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horóscopo Interativo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #f4f4f4;
+        }
+        #cartao {
+            width: 300px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #ffffff;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+            transition: background-color 0.5s ease;
+        }
+        #cartao img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Horóscopo Interativo</h1>
+    <p>Escolha o seu signo abaixo:</p>
+
+    <select id="seletorSigno">
+        <option value="">Selecione um signo</option>
+        <option value="aries">Áries</option>
+        <option value="touro">Touro</option>
+        <option value="gemeos">Gêmeos</option>
+        <option value="cancer">Câncer</option>
+        <option value="leao">Leão</option>
+        <option value="virgem">Virgem</option>
+        <option value="libra">Libra</option>
+        <option value="escorpiao">Escorpião</option>
+        <option value="sagitario">Sagitário</option>
+        <option value="capricornio">Capricórnio</option>
+        <option value="aquario">Aquário</option>
+        <option value="peixes">Peixes</option>
+    </select>
+
+    <button id="botaoVer">Ver Horóscopo</button>
+
+    <div id="cartao">
+        <img id="imagemSigno" src="horoscopo.avif" alt="Imagem do Signo">
+        <h2 id="nomeSigno">Signo</h2>
+        <p id="textoPrevisao">Selecione um signo para ver a previsão do dia.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
